@@ -103,7 +103,7 @@ public class SwiftBill extends JFrame {
 	private JLabel getIconswift() {
 		if (iconswift == null) {
 			iconswift = new JLabel("New label");
-			iconswift.setIcon(new ImageIcon("D:\\STS\\MarketBill\\SwiftIcon\\SwiftLogo.JPG"));
+			iconswift.setIcon(new ImageIcon("D:\\STS\\MarketBill\\src\\Images\\SwiftLogo.JPG"));
 			iconswift.setBorder(new LineBorder(new Color(0, 0, 0)));
 			iconswift.setBounds(198, 310, 284, 155);
 		}

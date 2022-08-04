@@ -14,6 +14,7 @@ import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JSeparator;
+import javax.swing.SwingConstants;
 import javax.swing.ImageIcon;
 
 public class CashierHome extends JFrame {
@@ -68,9 +69,12 @@ public class CashierHome extends JFrame {
 	private JLabel getImg() {
 		if (img == null) {
 			img = new JLabel("New label");
-			img.setBounds(40, 27, 179, 44);
-			img.setIcon(new ImageIcon("D:\\STS\\MarketBill\\SwiftIcon\\SwiftLogo.JPG"));
-			img.setBorder(new LineBorder(new Color(0, 0, 0)));
+			img.setBounds(59, 18, 159, 63);
+			img.setIcon(new ImageIcon(new ImageIcon("D:\\STS\\MarketBill\\src\\Images\\SwiftLogo.JPG").getImage().getScaledInstance(img.getWidth(),img.getHeight(), DO_NOTHING_ON_CLOSE)));
+			//img.setBounds(40, 27, 179, 63);
+			img.setHorizontalAlignment(SwingConstants.CENTER);
+			//img.setIcon(new ImageIcon("D:\\STS\\MarketBill\\src\\Images\\SwiftLogo.JPG"));
+			img.setBorder(new LineBorder(new Color(0, 0, 0),2,true));
 		}
 		return img;
 	}

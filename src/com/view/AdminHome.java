@@ -14,6 +14,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JSeparator;
+import javax.swing.SwingConstants;
 
 public class AdminHome extends JFrame {
 
@@ -67,9 +68,12 @@ public class AdminHome extends JFrame {
 	private JLabel getAhimage() {
 		if (ahimage == null) {
 			ahimage = new JLabel("New label");
-			ahimage.setIcon(new ImageIcon("D:\\STS\\MarketBill\\SwiftIcon\\SwiftLogo.JPG"));
-			ahimage.setBorder(new LineBorder(new Color(0, 0, 0)));
-			ahimage.setBounds(37, 21, 241, 62);
+			ahimage.setBounds(37, 21, 230, 62);
+			ahimage.setIcon(new ImageIcon(new ImageIcon("D:\\STS\\MarketBill\\src\\Images\\SwiftLogo.JPG").getImage().getScaledInstance(ahimage.getWidth(),ahimage.getHeight(), DO_NOTHING_ON_CLOSE)));			
+			ahimage.setHorizontalAlignment(SwingConstants.CENTER);
+			//ahimage.setIcon(new ImageIcon("D:\\STS\\MarketBill\\src\\Images\\SwiftLogo.JPG"));
+			ahimage.setBorder(new LineBorder(new Color(0, 0, 0),2,true));
+			
 		}
 		return ahimage;
 	}
